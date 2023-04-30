@@ -1,0 +1,19 @@
+{
+  "name": "module-2",
+  "version": "1.0.0",
+  "description": "**📔 Module-2: Explore basic type of Typescript**",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "ts-node-dev": "^2.0.0"
+  }
+}
