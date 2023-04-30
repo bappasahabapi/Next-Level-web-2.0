@@ -25,16 +25,27 @@
 [doc-link](https://www.typescriptlang.org/download)
 
 🗂️ TypeScript into your project. `npm install typescript --save-dev`
+
 🗂️ Install local folder `npm i -save-dev typescript`
+
 ➡️ Install globally ` npm i -g typescript`
+
 ➡️ check version `tsc -v`
+
 ➡️ run the code `tsc ./index.ts`
+
 ➡️ To make typescript configure file ` tsc --init `
+
 ➡️ To create package.json file `npm init -y`
+
 ➡️ To see the change automatically `tsc -w`
+
 ➡️ or install nodemon `npm i -D nodemon`
+
 ➡️ To run the server `npm start`
+
 📦 ts-node-dev `npm i ts-node-dev`
+
     
 add this file to package.json under ` ts-node-dev --respawn --transpile-only server.ts`
 
