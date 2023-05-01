@@ -21,6 +21,10 @@
 
     nvm --version
 
+Run code: Automatically run ts file
+
+        npx ts-node-dev --respawn src/6-spread-operator.ts
+
 📦 **Install Typescript**
 [doc-link](https://www.typescriptlang.org/download)
 
@@ -62,3 +66,5 @@ add this file to package.json under ` ts-node-dev --respawn --transpile-only ser
  "rootDir": "./src",     
  "outDir": "./dist",    
 ```
+
+ 
