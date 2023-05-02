@@ -4,7 +4,7 @@
 
 
 
-**📔 Module-2: Explore basic type of Typescript**
+
 
     node -v
 
