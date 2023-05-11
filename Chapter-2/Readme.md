@@ -1,0 +1,1 @@
+- `Mongoose:` A powerful**object data modeling(ODM) library** for MongoDB
