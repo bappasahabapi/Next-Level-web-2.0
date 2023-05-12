@@ -5,7 +5,6 @@ Second runt the mongodb compass shell.
 then: `npm run dev`   
 
 
-
 `Read this must:` https://mongoosejs.com/docs/typescript.html
 
 **Break down code**
