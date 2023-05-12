@@ -1,1 +1,2 @@
 - `Mongoose:` A powerful**object data modeling(ODM) library** for MongoDB
+- Check mongoose version: `mongos --version`
