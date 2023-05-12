@@ -7,6 +7,7 @@ then: `npm run dev`
 
 
 `Read this must:` https://mongoosejs.com/docs/typescript.html
+`Read this must:`https://mongoosejs.com/docs/typescript/statics-and-methods.html
 
 **Break down code**
 📁app
