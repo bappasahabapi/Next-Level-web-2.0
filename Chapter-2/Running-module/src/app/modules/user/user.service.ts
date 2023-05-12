@@ -5,7 +5,7 @@ import User from "./user.model";
 
 //todo: get all users from database
 export const getUsersFromDB = async (): Promise<IUser[]> => {
-    const users = await User.find();
+    const users = await User.find();  
     return users;
 }
 
@@ -13,8 +13,8 @@ export const getUsersFromDB = async (): Promise<IUser[]> => {
 //todo: post or create user using postman
 export const createUserToDB = async (payload: IUser): Promise<IUser> => {
 
-    const user = new User(payload)
-    await user.save();
+    const user = new User(payload) //user is instance of class User
+    await user.save();  // user.save() -> instance.method = instance method ->(build in method in mongooes)
     return user;
 };
 
