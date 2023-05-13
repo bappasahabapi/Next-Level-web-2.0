@@ -11,3 +11,5 @@ function StingNumber(first:string,second?:number){
  }
 
  StingNumber('Alam',5);
+
+

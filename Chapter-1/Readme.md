@@ -1,4 +1,4 @@
-### Creat a typescript environment Step by step
+### Create a typescript environment Step by step
 NVM- node version management
 ------------------------------------------------------------
 
