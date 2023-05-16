@@ -17,14 +17,59 @@ db.practice.find({
 
 
 db.practice.find({
-        $and: [
-            { "interests": "Travelling" },
-            { "interests": "Writing" },
-            { "interests": "Reading" }
-        ]
-    
+    $and: [
+        { "interests": "Travelling" },
+        { "interests": "Writing" },
+        { "interests": "Reading" }
+    ]
+
 })
     .projection({})
+
+// ------------------- Array of objects 
+
+db.practice.find({
+    "skills.name": "JAVASCRIPT",
+    "skills.level": "Intermidiate" // this part is no working
+})
+    .projection({ skills: 1 })
+
+// This one return exact match 
+
+db.practice.find({
+    skills: {
+        name: 'JAVASCRIPT',
+        lavel: 'Intermidiate'
+    }
+})
+    .projection({ skills: 1 }) // return [] ans
+
+// To solve the problem using  $elemMatch
+// { <field>: { $elemMatch: { <query1>, <query2>, ... } } }
+//Array of  object er khetre use korbo
+
+db.practice.find({
+    skills: {
+        $elemMatch: {
+            name: "JAVASCRIPT",
+            level: "Expert"
+        }
+    }
+})
+.project({ skills: 1 })
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
