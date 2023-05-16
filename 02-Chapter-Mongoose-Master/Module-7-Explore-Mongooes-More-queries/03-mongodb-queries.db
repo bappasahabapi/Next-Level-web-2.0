@@ -1,0 +1,31 @@
+
+// --------------------------------------- 
+db.practice.find({ interests: "Travelling" })
+
+db.practice.find({ "interests.0": "Travelling" }).project({ interests: 1 }) //ans: 22
+
+db.practice.find({ interests: ["Travelling", "Writing", "Reading"] }).project({ interests: 1 }) // ans 2
+
+db.practice.find({ interests: ["Reading", "Travelling", "Writing"] }).project({ interests: 1 }) // ans  0
+
+
+// { <field>: { $all: [ <value1> , <value2> ... ] } }
+
+db.practice.find({
+    interests: { $all: ["Reading", "Travelling", "Writing"] }
+}).project({ interests: 1 })
+
+
+db.practice.find({
+        $and: [
+            { "interests": "Travelling" },
+            { "interests": "Writing" },
+            { "interests": "Reading" }
+        ]
+    
+})
+    .projection({})
+
+
+
+

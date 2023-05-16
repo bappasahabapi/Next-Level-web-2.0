@@ -1,0 +1,101 @@
+/*
+$and
+Syntax: { $and: [ { <expression1> }, { <expression2> } , ... , { <expressionN> } ] }
+*/
+
+db.practice.find({
+    $and: [
+        { gender: 'Female' },
+        { age: { $lt: 30 } },
+        { 'skills.name': 'JAVASCRIPT' }
+    ]
+})
+    .project({
+        gender: 1,
+        age: 1,
+        'skills.name': 1
+    })
+
+// { $or: [ { <expression1> }, { <expression2> }, ... , { <expressionN> } ] }
+
+
+db.practice.find({
+    $or: [
+        { gender: 'Female' },
+        { age: { $lt: 30 } },
+        { 'skills.name': 'JAVASCRIPT' },
+        { 'skills.name': 'PYTHON' },
+    ]
+})
+    .project({
+        gender: 1,
+        age: 1,
+        'skills.name': 1
+    })
+
+// ------------------ for same field hole amra $in use koro
+
+
+db.practice.find({
+    'skills.name': { $in: ['JAVASCRIPT', 'PYTHON'] }
+}).project({
+    'skills.name': 1
+})
+
+
+// ------------------------- same field e implicit and useable na
+
+db.practice.find({
+    age: { $ne: 18 }, age: { $gt: 15 }  // gives error
+})
+    .project({ age: 1 })
+
+// gives the correct output using explict and
+db.practice.find({
+    $and: [
+        { age: { $ne: 18 } },
+        { age: { $gt: 15 } }
+    ]
+})
+    .project({ age: 1 })
+    .sort({ age:1 })
+
+
+// ------------------------------------------------------ 
+
+// $exists  Syntax: { field: { $exists: <boolean> } }
+
+db.practice.find({age:{$exists: true}})
+   .projection({"name.firstName":1})
+
+db.practice.find({city:{$exists: false}})
+   
+db.practice.find({skills:{$exists: true}})
+
+
+// { field: { $type: [ <BSON type1> , <BSON type2>, ... ] } }
+   
+db.practice.find({age:{$type: 'int'}})
+  
+db.practice.find({friends:{$type: 'array'}})
+    
+    
+    // { field: { $type: [ <BSON type1> , <BSON type2>, ... ] } }
+db.practice.find({skills:{$size: 0}}).project({skills:1})
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
