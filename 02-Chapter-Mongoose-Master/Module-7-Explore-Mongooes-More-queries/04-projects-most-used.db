@@ -1,0 +1,47 @@
+/*
+db.practice.find({})
+   .projection({})
+   .sort({_id:-1})
+   .limit(100)
+   
+ */
+ 
+ 
+ db.practice.find({_id:ObjectId("6406ad65fc13ae5a400000c7")})
+   .projection({})
+   .sort({_id:-1})
+   .limit(100)
+ 
+//  db.practice.updateOne(
+//      {kalke update korre chai},{$set:{ki diye update korte chai}}
+// ) 
+
+
+// $ser amra array object e use korbo na only premitive e use korbol
+db.practice.updateOne(
+    {_id:ObjectId("6406ad65fc13ae5a400000c7")},
+    {$set:{
+        country:"bangladesh"
+    }}
+)
+
+db.practice.updateOne(
+    {_id:ObjectId("6406ad65fc13ae5a400000c7")},
+    {$set:{
+        languages:["bappa"]
+    }}
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
