@@ -54,3 +54,29 @@
 
 ----
 
+**`Steps:` folder sturcture**
+
+
+-   `Start`->server->app->route->controller->service->`End`
+
+-    Data validate korar jonno `schema` make korci[ekane interface er sahajje schema theke model toiri korcilam]
+
+        
+
+**server.ts**
+
+    1. gives database connection
+    2. app lisen kore 
+**app.ts**
+
+    amader sob kaj app e korlam
+**route.ts**
+
+    route controller k call dey
+**controller.ts**
+
+    service k call dey
+**service.ts**
+
+
+
