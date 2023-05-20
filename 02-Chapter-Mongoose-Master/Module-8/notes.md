@@ -7,3 +7,5 @@ https://www.mongodb.com/docs/manual/aggregation/
 
 `$out` Modify thevdocument and gives new array of data.
 not mutate the orginal data
+
+`$group` : unique jinish ber korte pari .Unique combination ber korte pari
