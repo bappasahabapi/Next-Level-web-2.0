@@ -29,8 +29,10 @@
 ---
 `🟢 So we have three roles:`
 1.Student
-1.Admin
-1.Faculty
+
+2.Admin
+
+3.Faculty
 
 ---
 
@@ -53,19 +55,19 @@ so we can say every service as an application:
         - Business Analyst 
         - CTO
 `work:`
-    1. Product Requirement Document `(PRD)`
-    2. Business Requirement Document `(BRD)`
-    3. Software Requirement Specification `(SRS)`
-    4. Functional Requirement Document/Specifation `(FRD/FRS)`
+-  Product Requirement Document `(PRD)`
+-  Business Requirement Document `(BRD)`
+-  Software Requirement Specification `(SRS)`
+-  Functional Requirement Document/Specifation `(FRD/FRS)`
 
 **2. Design** 
 
         - System Architecture 
         -  UI/UX Designer
 `work:`
-    1. High Level Document
-    2. Low Level Design Document
-    3. Database Schema
+ - High Level Document
+ - Low Level Design Document
+ - Database Schema
 
     
 **3. Implementation | Development**
@@ -80,10 +82,10 @@ so we can say every service as an application:
         - Tester
 
 `work:`
-    1. Test Plan
-    2. Test Case
-    3. Test Script
-    3. Defect Report
+- Test Plan
+- Test Case
+- Test Script
+- Defect Report
 
 
 **Deployment**     
@@ -92,9 +94,9 @@ so we can say every service as an application:
     - DevOps
 
 `work:`
-    1. Release Notes
-    2. Installation Guides
-    3. Configuration Guides
+- Release Notes
+- Installation Guides
+- Configuration Guides
 
 
 **5. Maintenance**
@@ -105,6 +107,6 @@ so we can say every service as an application:
     -Developers
 
 `work:`
-    1. Change Request
-    2. Bug Reports
-    3. Patch Release
+- Change Request
+- Bug Reports
+- Patch Release
